@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <style>
+        /* Reset básico */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f0f0f0; /* Cor de fundo */
+            color: #333; /* Cor da fonte */
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            transition: background-color 0.5s; /* Animação de transição */
+            text-align: center;
+        }
+
+        h1 {
+            color: #0056b3; /* Cor do título */
+            text-align: center;
+            margin-bottom: 20px;
+            animation: fadeIn 1s; /* Animação de entrada */
+        }
+
+        p {
+            margin-bottom: 15px;
+            animation: slideIn 1s forwards; /* Animação de entrada para parágrafo */
+        }
+
+        a {
+            color: #007bff; /* Cor dos links */
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s; /* Animação de transição */
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #0056b3; /* Cor ao passar o mouse */
+        }
+
+        /* Animações */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Estilo de botões */
+        .button {
+            display: inline-block;
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s; /* Animação de transição */
+            text-decoration: none; /* Remove o sublinhado dos links */
+        }
+
+        .button:hover {
+            background-color: #a5ff70; /* Cor ao passar o mouse */
+            transform: scale(1.05); /* Aumenta o botão ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo à Página Inicial!</h1>
+    <p>Esta é a página inicial projeto com Express.</p>
+    <a href="/sobre" class="button">Sobre</a>
+</body>
+</html>
